@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-jops:
-  my-jop:
+jobs:
+  my-job:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        run: echo "Hello, World!"
+        run: echo "Hello, world!"
