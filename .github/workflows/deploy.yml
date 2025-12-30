@@ -9,3 +9,6 @@ jobs:
     steps:
       - name: Github Repository 파일 불러오기 2
         uses: actions/checkout@v2
+
+      - name: Repository 파일 출력하기
+        run: ls
