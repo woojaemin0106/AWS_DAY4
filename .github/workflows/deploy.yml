@@ -16,3 +16,9 @@ jobs:
           echo "첫 번째 명령어 실행"
           echo "두 번째 명령어 실행"
           echo "세 번째 명령어 실행"
+          pwd
+
+      - name: Github Actions 자체 저장되어 있는 변수 사용해보기
+        run: |
+          echo ${GITHUB_REPOSITORY}
+          echo ${GITHUB_SHA}
