@@ -27,3 +27,7 @@ jobs:
         run: |
           aws s3 rm --recursive s3://oz-work
           aws s3 op ./dist s3://oz-work/ --recursive
+
+      - name: CloudFront 캐시 무효화
+        run: |
+          aws cloudfront create-invalidation --distribution-id E1IBPOOPMCPS9J --paths "/*"
