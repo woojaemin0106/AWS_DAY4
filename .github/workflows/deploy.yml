@@ -8,5 +8,11 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
+      - name: Hello World 출력하기
         run: echo "Hello, world!"
+
+      - name: 여러 명렁어 문장 작성하기
+        run: |
+          echo "첫 번째 명령어 실행"
+          echo "두 번째 명령어 실행"
+          echo "세 번째 명령어 실행"
